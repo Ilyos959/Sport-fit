@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sport Fit</title>
+  </head>
+  <body>
+    <div class="regmodal" id="modal">
+      <div class="modal-content">
+        <div class="modal1">
+          <h1>Регистрация</h1><h1>
+        </div>
+          <div class="modal2">
+            <div class="form-field">
+              <label for="username">Имя пользователя:</label
+              ><input type="text" id="username" required />
+            </div>
+            <div class="form-field">
+              <label for="password">Пароль:</label>
+              <input type="password" id="password" aria-required="true" />
+            </div>  
+            <div class="form-field">
+              <label for="confirm-password">Подтвердите пароль:</label>
+              <input type="password" id="confirm-password" required />
+            </div>
+          </div>
+          <div class="modal3">
+            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+          </div>
+      </div>
+    </div>
+    <!-- !=================================конец модуля=========================
+    <!-- *=================================начало навбара========================= -->
+    <nav>
+      <button id="hamburger-click">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div id="up" class="search">
+        <input type="text" id="searcher">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+      <div id="burger-content" class="burger">
+        <div class="burgerh1">
+        <h1><a href="#1">Jordan</a></h1>
+        <h1><a href="#2">Fourth Jordan</a></h1>
+        <h1><a href="#з">Expensive</a></h1>
+        <h1><a href="#4">Rare</a></h1>
+        <h1><a href="#5">Fotter</a></h1>
+    </nav>
+    <!-- ! ===================================конец навбара=================================== -->
+    <div style="position: absolute; top: 50px">
+      <div class="jordan" id="1">
+        <h1>Jordan</h1>
+      </div>
+      <div id="parent" class="parent"></div>
+
+      <div class="jordan" id="2">
+        <h1>Fourth Jordan</h1>
+      </div>    
+      <div id="parent1" class="parent"></div>
+
+      <div class="jordan" id="з">
+        <h1>Expensive</h1>
+      </div>
+      <div id="parent2" class="parent"></div>
+      <div class="jordan" id="4">
+        <h1>Rare</h1>
+      </div>
+      <div id="slider" class="carousel"></div>
+      
+    </div>
+    <footer id="5">
+      <div>
+        <h1>Nike</h1>
+      </div>  
+      <div class="help">
+        <h2>help</h2>
+        <li class="fa-telegram">Telegramm</li>
+        <li class="fa-facebook">Facebook</li>
+        <li class="fa-instagram">Instagram</li>
+      </div>
+      <button id="color-toggle-btn" onclick="toggleTextColors()">Карточки</button>
+      <button id="color" onclick="changeColor()">Фон</button>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
